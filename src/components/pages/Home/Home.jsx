@@ -1,19 +1,12 @@
+import { Footer } from "../../footer/Footer";
+import { Header } from "../../header/Header";
+import { Outlet, Link } from "react-router-dom";
+
 export const Home = () => {
   return (
-    <div className="wrapper flex flex-col justify-between items-center m-auto w-[638px]">
-      <section className="flex flex-col justify-center w-[100%] items-center gap-[55px]">
-        <div className="flex flex-col justify-center items-center gap-[15px]">
-          <img src="https://via.placeholder.com/68x45" alt="onco" />
-
-          <div className="text-[10px] tracking-[3.80px]">
-            Ask me anything on health
-          </div>
-
-          <div className="flex justify-center items-center w-[97px] h-[33px] p-[10px] rounded-3xl bg-[#52a3cf] text-[#fff] text-[12px]">
-            GPT
-          </div>
-        </div>
-
+    <div className="wrapper absolute md:w-[86%] md:absolute md:left-[13%]  container flex flex-col gap-[55px] mt-10 justify-between items-center m-auto">
+      <Header />
+      <section className="flex flex-col justify-center w-[100%] md:w-[680px] items-center gap-[55px]">
         <div className="flex flex-col justify-center items-center gap-6 w-[100%]">
           <div className="ask w-[100%]">
             <input
@@ -32,8 +25,10 @@ export const Home = () => {
           </div>
         </div>
         <div className="w-[100%] flex flex-col items-center justify-center">
-          <select className="w-[95%] border mb-[15px]">
-            <option value="">Popular Now</option>
+          <select className="w-[95%] border mb-[15px] text-[12px]">
+            <option value="" className="text-[12px]">
+              Popular Now
+            </option>
             <option value="">Trending</option>
             <option value="">Others</option>
           </select>
@@ -75,37 +70,8 @@ export const Home = () => {
         </div>
       </section>
 
-      <section className="flex justify-center items-center gap-6 text-[12px] font-medium mt-[80px]">
-        <div>
-          <a href="#" className=" text-[--blue]">
-            How it works
-          </a>
-        </div>
-
-        <div>
-          <a href="#" className=" text-[--blue]">
-            Home
-          </a>
-        </div>
-
-        <div>
-          <a href="#" className=" text-[--blue]">
-            Subscribe
-          </a>
-        </div>
-
-        <div>
-          <a href="#" className=" text-[--blue]">
-            Privacy Policy
-          </a>
-        </div>
-
-        <div>
-          <a href="#" className=" text-[--blue]">
-            Terms
-          </a>
-        </div>
-      </section>
+      <Footer />
+      <Outlet />
     </div>
   );
 };

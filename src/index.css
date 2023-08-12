@@ -17,3 +17,10 @@
   font-family: "Poppins", sans-serif;
   color: var(--black);
 }
+
+.my-clip::after {
+  clip-path: polygon(100% 0, 0 0, 0 95%);
+}
+svg:hover {
+  fill: #000;
+}

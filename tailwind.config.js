@@ -5,6 +5,7 @@ export default {
     extend: {
       boxShadow: {
         "3xl": "0px 0px 70px rgba(0,0,0,0.10)",
+        "4xl": "0px 0px 20px 5px rgba(0,0,0,0.20)",
       },
     },
   },
