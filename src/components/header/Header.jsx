@@ -1,7 +1,8 @@
+import Logo from "../../assets/logo.svg";
 export const Header = () => {
   return (
     <div className="header flex flex-col justify-center items-center gap-[15px]">
-      <img src="https://via.placeholder.com/68x45" alt="onco" />
+      <img src={Logo} className="w-[65px]" alt="onco" />
 
       <div className="text-[10px] tracking-[3.80px]">
         Ask me anything on health

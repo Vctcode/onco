@@ -4,7 +4,7 @@ import { Outlet, Link } from "react-router-dom";
 
 export const Home = () => {
   return (
-    <div className="wrapper absolute md:w-[86%] md:absolute md:left-[13%]  container flex flex-col gap-[55px] mt-10 justify-between items-center m-auto">
+    <div className="wrapper absolute md:w-[86%] md:absolute md:left-[13%]  container flex flex-col gap-[55px] mt-20 justify-between items-center m-auto">
       <Header />
       <section className="flex flex-col justify-center w-[100%] md:w-[680px] items-center gap-[55px]">
         <div className="flex flex-col justify-center items-center gap-6 w-[100%]">

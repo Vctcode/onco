@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link, Outlet } from "react-router-dom";
 
 export const Footer = () => {
   const [isHovering, setIsHovering] = useState(false);
@@ -31,14 +32,9 @@ export const Footer = () => {
             </div>
           </div>
         )}
-        <a
-          href="#"
-          className=" text-[--blue]"
-          onMouseOver={handleMouseOver}
-          onMouseOut={handleMouseOut}
-        >
+        <Link to="/how-it-works" className=" text-[--blue]">
           How it works
-        </a>
+        </Link>
       </div>
 
       <div>
@@ -64,6 +60,8 @@ export const Footer = () => {
           Terms
         </a>
       </div>
+
+      <Outlet />
     </section>
   );
 };

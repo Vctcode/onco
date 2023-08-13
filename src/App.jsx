@@ -7,6 +7,7 @@ import { AiProfile } from "./components/pages/AiProfile/Aiprofile";
 import { Home } from "./components/pages/Home/Home";
 import { Sidebar } from "./components/sidebar/Sidebar";
 import { SignUp } from "./components/signup/signUp";
+import { HowItWorks } from "./components/pages/HowItWorks/HowItWorks";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/signup" element={<SignUp />} />
           <Route path="/ai_profile" element={<AiProfile />} />
+          <Route path="/how-it-works" element={<HowItWorks />} />
         </Routes>
       </BrowserRouter>
     </div>
